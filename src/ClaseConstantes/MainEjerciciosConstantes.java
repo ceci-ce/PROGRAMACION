@@ -114,6 +114,6 @@ public class MainEjerciciosConstantes {
         final float TASA_CAMBIO = 1.12f;
         int cambio = 645;
 
-        System.out.println("¿Cuántos euros son 645 dólares?: " + (cambio * TASA_CAMBIO));
+        System.out.println("¿Cuántos euros son 645 dólares?: " + (cambio * TASA_CAMBIO)+ " €");
     }
 }
