@@ -47,35 +47,47 @@ public class MainEjercicioEstructurasDeControl {
 
 //Ejercicio 3: Simulación de una calculadora
 //Crea un menú que permita sumar, restar, multiplicar y dividir dos números ingresados por el usuario.
-        System.out.println("Menu: ");
-        System.out.println("1.Sumar");
-        System.out.println("2.Restar");
-        System.out.println("3.Multiplicar");
-        System.out.println("4.Dividir");
-        System.out.println("Elige una opcion: ");
+//        System.out.println("Menu: ");
+//        System.out.println("1.Sumar");
+//        System.out.println("2.Restar");
+//        System.out.println("3.Multiplicar");
+//        System.out.println("4.Dividir");
+//        System.out.println("Elige una opcion: ");
+//
+//        int opcion = scanner.nextInt();
+//        System.out.print("Ingresa el primer numero: ");
+//        double num1 = scanner.nextDouble();//leemos la primera opcion del usuario
+//        System.out.println("Ingresa el segundo numero: ");
+//        double num2 = scanner.nextDouble();//leemos la segunda opcion del usuario
+//
+//        switch (opcion){ // Evaluamos la opción con switch
+//            case 1:
+//                System.out.println("Resultado: " + (num1 + num2));
+//                break;
+//            case 2:
+//                System.out.println("Resultado: " + (num1 - num2));
+//                break;
+//            case 3:
+//                System.out.println("Resultado: " + (num1 * num2));
+//                break;
+//            case 4:
+//                System.out.println("Resultado: " + (num1 / num2));
+//                break;
+//            default:
+//                System.out.println("Opcion no valida.");
+//        }
+//        scanner.close();
+//    }
+//}
+//Ejercicio 4: Números pares hasta N
+//Pide un número al usuario y muestra todos los números pares desde 1 hasta ese número.
+        System.out.println("Introduce un numero: ");
+        int n = scanner.nextInt();
 
-        int opcion = scanner.nextInt();
-        System.out.print("Ingresa el primer numero: ");
-        double num1 = scanner.nextDouble();//leemos la primera opcion del usuario
-        System.out.println("Ingresa el segundo numero: ");
-        double num2 = scanner.nextDouble();//leemos la segunda opcion del usuario
-
-        switch (opcion){ // Evaluamos la opción con switch
-            case 1:
-                System.out.println("Resultado: " + (num1 + num2));
-                break;
-            case 2:
-                System.out.println("Resultado: " + (num1 - num2));
-                break;
-            case 3:
-                System.out.println("Resultado: " + (num1 * num2));
-                break;
-            case 4:
-                System.out.println("Resultado: " + (num1 / num2));
-                break;
-            default:
-                System.out.println("Opcion no valida.");
-        }
+        for (int i = 2; i <= n; i += 2) { //+= es un operador de asignación compuesto, que se usa para sumar un valor a una
+            System.out.println(i + " "); // variable y luego asignar el resultado a esa misma variable. Es una forma
+        }                                // abreviada de escribir una operación de suma seguida de una asignación.
         scanner.close();
+
     }
 }
