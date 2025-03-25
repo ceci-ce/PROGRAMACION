@@ -81,13 +81,40 @@ public class MainEjercicioEstructurasDeControl {
 //}
 //Ejercicio 4: Números pares hasta N
 //Pide un número al usuario y muestra todos los números pares desde 1 hasta ese número.
-        System.out.println("Introduce un numero: ");
-        int n = scanner.nextInt();
+//        System.out.println("Introduce un numero: ");
+//        int n = scanner.nextInt();
+//
+//        for (int i = 2; i <= n; i += 2) { //+= es un operador de asignación compuesto, que se usa para sumar un valor a una
+//            System.out.println(i + " "); // variable y luego asignar el resultado a esa misma variable. Es una forma
+//        }                                // abreviada de escribir una operación de suma seguida de una asignación.
+//        scanner.close();
+//
+//    }
+//}
+//Ejercicio 5: Contraseña con intentos limitados
+//Pide al usuario una contraseña. Solo tiene 3 intentos antes de bloquearse.
+        String contraseñaCorrecta = "Bali3";
+        int intentos = 3;
 
-        for (int i = 2; i <= n; i += 2) { //+= es un operador de asignación compuesto, que se usa para sumar un valor a una
-            System.out.println(i + " "); // variable y luego asignar el resultado a esa misma variable. Es una forma
-        }                                // abreviada de escribir una operación de suma seguida de una asignación.
+        while (intentos > 0) {
+            System.out.println("Ingresa la contraseña: ");
+            String contraseña = scanner.nextLine();//captura la entrada del usuario como una cadena de texto y la almacena
+                                                    // en la variable contraseña para poder usarla más tarde en el programa
+                                                    // (como comparar con una contraseña correcta, como se ve en tu código).
+            if (contraseña.equals(contraseñaCorrecta)) {
+                System.out.println("Contraseña correcta");
+                return;
+            } else {
+                intentos--;
+                System.out.println("Contraseña incorrecta. Te quedan " + intentos + " intentos");
+                //Decrementa el valor de intentos: Cada vez que el usuario ingresa una contraseña incorrecta, el valor de intentos disminuye en 1.
+                //La variable intentos se inicia con un valor de 3. Cada vez que el usuario ingresa una contraseña incorrecta,
+                // el programa ejecuta intentos--, lo que reduce el número de intentos disponibles en 1. El ciclo while continuará
+                // ejecutándose mientras queden intentos disponibles, es decir, mientras intentos > 0.
+            }
+        }
+        System.out.println("Acceso bloqueado.");
         scanner.close();
-
     }
 }
+
