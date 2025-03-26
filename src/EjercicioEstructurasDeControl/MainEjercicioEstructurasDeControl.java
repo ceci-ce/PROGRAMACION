@@ -140,3 +140,24 @@ public class MainEjercicioEstructurasDeControl {
             scanner.close();
         }
     }
+
+// Explicación:
+// nextInt(100) genera un número aleatorio entre 0 y 99
+// Al sumarle 1, el rango se desplaza a 1 a 100. Es decir, ahora el número aleatorio generado será entre 1
+// (inclusive) y 100 (inclusive.
+//
+// Bucle do-while. El flujo de este tipo de bucle es el siguiente:
+//
+// Primero se ejecuta el bloque de código dentro del do, sin importar si la condición del while se cumple o no.
+// Luego, se evalúa la condición que se encuentra después del while y, si la condición es true, el bucle continuará
+// repitiéndose.
+//
+// La condición que evalúa el do-while es:
+//
+// intento != numeroAleatorio: Mientras el valor de intento (el número que ingresa el usuario) sea diferente de
+// numeroAleatorio, el bucle continuará.
+// Si el valor de intento es diferente de numeroAleatorio, el bucle se ejecutará nuevamente, pidiendo al usuario
+// que intente adivinar el número otra vez.
+//Una vez que el usuario adivina el número correctamente, es decir, cuando intento == numeroAleatorio, el bucle se termina
+
+
