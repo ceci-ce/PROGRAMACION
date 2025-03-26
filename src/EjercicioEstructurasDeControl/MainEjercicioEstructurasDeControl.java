@@ -1,4 +1,5 @@
 package EjercicioEstructurasDeControl;
+import java.util.Random;
 import java.util.Scanner;//Importamos Scanner para leer datos del usuario
 //Ejercicio 1: Clasificación de edad
 //Pide al usuario su edad e imprime si es menor de edad, adulto o adulto mayor.
@@ -93,28 +94,49 @@ public class MainEjercicioEstructurasDeControl {
 //}
 //Ejercicio 5: Contraseña con intentos limitados
 //Pide al usuario una contraseña. Solo tiene 3 intentos antes de bloquearse.
-        String contraseñaCorrecta = "Bali3";
-        int intentos = 3;
+//        String contraseñaCorrecta = "Bali3";
+//        int intentos = 3;
+//
+//        while (intentos > 0) {
+//            System.out.println("Ingresa la contraseña: ");
+//            String contraseña = scanner.nextLine();//captura la entrada del usuario como una cadena de texto y la almacena
+//                                                    // en la variable contraseña para poder usarla más tarde en el programa
+//                                                    // (como comparar con una contraseña correcta, como se ve en tu código).
+//            if (contraseña.equals(contraseñaCorrecta)) {
+//                System.out.println("Contraseña correcta");
+//                return;
+//            } else {
+//                intentos--;
+//                System.out.println("Contraseña incorrecta. Te quedan " + intentos + " intentos");
+//                //Decrementa el valor de intentos: Cada vez que el usuario ingresa una contraseña incorrecta, el valor de intentos disminuye en 1.
+//                //La variable intentos se inicia con un valor de 3. Cada vez que el usuario ingresa una contraseña incorrecta,
+//                // el programa ejecuta intentos--, lo que reduce el número de intentos disponibles en 1. El ciclo while continuará
+//                // ejecutándose mientras queden intentos disponibles, es decir, mientras intentos > 0.
+//            }
+//        }
+//        System.out.println("Acceso bloqueado.");
+//        scanner.close();
+//    }
+//}
+//Ejercicio 6: Adivina el número
+//Genera un número aleatorio entre 1 y 100 y deja que el usuario lo adivine con pistas.
 
-        while (intentos > 0) {
-            System.out.println("Ingresa la contraseña: ");
-            String contraseña = scanner.nextLine();//captura la entrada del usuario como una cadena de texto y la almacena
-                                                    // en la variable contraseña para poder usarla más tarde en el programa
-                                                    // (como comparar con una contraseña correcta, como se ve en tu código).
-            if (contraseña.equals(contraseñaCorrecta)) {
-                System.out.println("Contraseña correcta");
-                return;
-            } else {
-                intentos--;
-                System.out.println("Contraseña incorrecta. Te quedan " + intentos + " intentos");
-                //Decrementa el valor de intentos: Cada vez que el usuario ingresa una contraseña incorrecta, el valor de intentos disminuye en 1.
-                //La variable intentos se inicia con un valor de 3. Cada vez que el usuario ingresa una contraseña incorrecta,
-                // el programa ejecuta intentos--, lo que reduce el número de intentos disponibles en 1. El ciclo while continuará
-                // ejecutándose mientras queden intentos disponibles, es decir, mientras intentos > 0.
-            }
+        Random random = new Random();
+        int numeroAleatorio = random.nextInt(100) + 1;
+        int intento;
+
+        do {
+            System.out.println("Adivina un numero entre el 1 y el 100: ");
+            intento = scanner.nextInt();
+
+            if (intento < numeroAleatorio) {
+                System.out.println("Muy bajo.");
+            } else if (intento > numeroAleatorio) {
+                    System.out.println("Muy alto.");
+                }
+            } while (intento != numeroAleatorio) ;
+
+            System.out.println("Lo adivinaste.");
+            scanner.close();
         }
-        System.out.println("Acceso bloqueado.");
-        scanner.close();
     }
-}
-
