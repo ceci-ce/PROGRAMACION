@@ -121,25 +121,25 @@ public class MainEjercicioEstructurasDeControl {
 //Ejercicio 6: Adivina el número
 //Genera un número aleatorio entre 1 y 100 y deja que el usuario lo adivine con pistas.
 
-        Random random = new Random();
-        int numeroAleatorio = random.nextInt(100) + 1;
-        int intento;
-
-        do {
-            System.out.println("Adivina un numero entre el 1 y el 100: ");
-            intento = scanner.nextInt();
-
-            if (intento < numeroAleatorio) {
-                System.out.println("Muy bajo.");
-            } else if (intento > numeroAleatorio) {
-                    System.out.println("Muy alto.");
-                }
-            } while (intento != numeroAleatorio) ;
-
-            System.out.println("Lo adivinaste.");
-            scanner.close();
-        }
-    }
+//        Random random = new Random();
+//        int numeroAleatorio = random.nextInt(100) + 1;
+//        int intento;
+//
+//        do {
+//            System.out.println("Adivina un numero entre el 1 y el 100: ");
+//            intento = scanner.nextInt();
+//
+//            if (intento < numeroAleatorio) {
+//                System.out.println("Muy bajo.");
+//            } else if (intento > numeroAleatorio) {
+//                    System.out.println("Muy alto.");
+//                }
+//            } while (intento != numeroAleatorio) ;
+//
+//            System.out.println("Lo adivinaste.");
+//            scanner.close();
+//        }
+//    }
 
 // Explicación:
 // nextInt(100) genera un número aleatorio entre 0 y 99
@@ -160,4 +160,21 @@ public class MainEjercicioEstructurasDeControl {
 // que intente adivinar el número otra vez.
 //Una vez que el usuario adivina el número correctamente, es decir, cuando intento == numeroAleatorio, el bucle se termina
 
+//Ejercicio 7: Serie Fibonacci
+//Pide un número n y muestra los primeros n términos de la serie de Fibonacci.
+
+        System.out.println("Número de términos: ");
+        int n = scanner.nextInt();
+
+        int a = 0, b = 1, c;
+
+        for (int i = 0; i < n; i++) {
+        System.out.println(a + " ");
+        c = a + b;
+        a = b;
+        b = c;
+    }
+    scanner.close();
+}
+}
 
