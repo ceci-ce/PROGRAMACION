@@ -90,3 +90,72 @@ public class MainClaseConversiones {
 //        System.out.println(texto);
 //    }
 //}
+
+//7. Conversión de double a String
+
+//        double precio = 99.99;
+//
+//        Conversion a String
+//        String textoPrecio = Double.toString(precio);
+//
+//        System.out.println(textoPrecio);
+//    }
+//}
+
+//8. Conversion de boolean a String
+
+//        boolean activo = true;
+//
+//         Conversion a String
+//
+//        String estado = String.valueOf(activo);
+//
+//        System.out.println(estado);
+//    }
+//}
+
+//9. Conversion en operaciones matemáticas
+
+//        int a = 5;
+//        int b = 2;
+
+        //Division sin conversion (se pìerde el decimal)
+        System.out.println("Division entera: " + 5 / 2);
+
+//        Conversion a double para obtener decimales
+//        double resultado = (double) a / b;
+//        System.out.println("Division con casting: " + resultado);
+//    }
+//}
+    //💡 Explicación:
+        // Sin conversión, la división entre enteros descarta los decimales.
+
+//10.  Conversión de long a int y de float a int
+
+//🔹 Objetivo: Ver cómo se pueden convertir tipos numéricos más grandes en más pequeños usando casting.
+
+        // Declaramos un número de tipo long (entero largo)
+//        long numeroLargo = 1_000_000_000L; // 1,000 millones
+//
+//        // Convertimos de long a int (puede haber pérdida si el número es muy grande)
+//        int numeroEntero = (int) numeroLargo;
+//
+//        // Declaramos un número float con decimales
+//        float numeroDecimal = 9.99f;
+//
+//        // Convertimos de float a int (se perderán los decimales)
+//        int numeroSinDecimales = (int) numeroDecimal;
+//
+//        // Imprimimos los valores antes y después de la conversión
+//        System.out.println("Número original (long): " + numeroLargo);
+//        System.out.println("Número convertido a int: " + numeroEntero);
+//        System.out.println("Número original (float): " + numeroDecimal);
+//        System.out.println("Número convertido a int (sin decimales): " + numeroSinDecimales);
+//    }
+//}
+    //⚠ Explicación:
+        //long → int: No hay problema en este caso, pero si el número fuera mayor a 2,147,483,647, podría desbordarse.
+        //float → int: Se eliminan los decimales porque int no los puede almacenar.
+
+
+
