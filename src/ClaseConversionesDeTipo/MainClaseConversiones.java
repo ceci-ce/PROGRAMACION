@@ -1,7 +1,7 @@
-package ClaseConversionesDeTipo;
-
-public class MainClaseConversiones {
-    public static void main(String[] args) {
+//package ClaseConversionesDeTipo;
+//
+//public class MainClaseConversiones {
+//    public static void main(String[] args) {
 //1. Conversion implicita de int a double
         // Declaramos una variable entera
 //        int numeroEntero = 25;
@@ -120,7 +120,7 @@ public class MainClaseConversiones {
 //        int b = 2;
 
         //Division sin conversion (se pìerde el decimal)
-        System.out.println("Division entera: " + 5 / 2);
+       // System.out.println("Division entera: " + 5 / 2);
 
 //        Conversion a double para obtener decimales
 //        double resultado = (double) a / b;
