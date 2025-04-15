@@ -105,6 +105,33 @@ public class MainClase2EstructurasDeControl {
 //El try-catch atrapa el error cuando eso ocurre, y te permite reaccionar con un mensaje personalizado en vez
 //de que el programa se rompa.
 
+//        Ejercicio 6 – Acceder a una posición no válida de una cadena (charAt) con control de excepción
+//        Solicita una palabra al usuario y pide una posición. Intenta mostrar el carácter en esa posición usando
+//        try-catch. Si se produce un error, muestra un mensaje.
+
+
+        Scanner scanner = new Scanner(System.in);
+
+        //Solicitar palabra al usuario
+
+        System.out.println("Dime una palabra: ");
+        String palabra = scanner.next();
+
+        //Pedir una posicion dentro de la palabra
+        System.out.println("Dime una posicion dentro de la palabra: ");
+        int posicion = scanner.nextInt();
+
+        try {
+            char resultado = palabra.charAt(posicion);
+            System.out.println("La posicion de la palabra es: " + resultado);
+        } catch (StringIndexOutOfBoundsException e){
+            System.out.println("Error: La posición indicada no existe en la palabra.");
+        }
+        scanner.close();
+    }
+}
+
+
 
 
 
