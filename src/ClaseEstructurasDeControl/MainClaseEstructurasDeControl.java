@@ -1,7 +1,7 @@
-package ClaseEstructurasDeControl;
-import java.util.Scanner;//sin esto no vas a pedirle al usuario dato alguno
-public class MainClaseEstructurasDeControl {
-    public static void main(String[] args) {
+//package ClaseEstructurasDeControl;
+//import java.util.Scanner;//sin esto no vas a pedirle al usuario dato alguno
+//public class MainClaseEstructurasDeControl {
+//    public static void main(String[] args) {
 //   Ejercicio 1: Uso de if para verificar números positivos y negativos
 //📌 Objetivo: Pedir un número al usuario y determinar si es positivo, negativo o cero.
 
