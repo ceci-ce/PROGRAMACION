@@ -44,13 +44,26 @@ public class MainClase2EstructurasDeControl {
 //      Haz un programa que busque el número 7 entre los números del 1 al 20. Cuando lo encuentre, debe mostrar un
 //      mensaje y terminar el bucle con break.
 
-        for (int i = 1; i <= 20; i++) {
-            if (i == 7) {
-                System.out.println("Has encontrado el numero 7");
-                break;
-            }
-            System.out.println(i);
+//        for (int i = 1; i <= 20; i++) {
+//            if (i == 7) {
+//                System.out.println("Has encontrado el numero 7");
+//                break;
+//            }
+//            System.out.println(i);
+//        }
+//    }
+//}
+//        Ejercicio 4 – Evitar mostrar letras vocales con continue
+//         Muestra las letras de la palabra "PROGRAMACION", pero omite las vocales usando continue.
+
+    String palabra = "PROGRAMACION";
+    for (int i = 0;i < palabra.length();i++){
+        char letra = palabra.charAt(i);
+        if (letra == 'A'|| letra == 'E' || letra == 'I'|| letra == 'O' || letra == 'U') {
+        continue;
         }
+        System.out.println(letra);
+}
     }
 }
 
