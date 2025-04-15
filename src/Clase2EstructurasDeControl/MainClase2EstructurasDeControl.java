@@ -110,26 +110,51 @@ public class MainClase2EstructurasDeControl {
 //        try-catch. Si se produce un error, muestra un mensaje.
 
 
-        Scanner scanner = new Scanner(System.in);
+//        Scanner scanner = new Scanner(System.in);
 
         //Solicitar palabra al usuario
 
-        System.out.println("Dime una palabra: ");
-        String palabra = scanner.next();
+//        System.out.println("Dime una palabra: ");
+//        String palabra = scanner.next();
+//
+//        //Pedir una posicion dentro de la palabra
+//        System.out.println("Dime una posicion dentro de la palabra: ");
+//        int posicion = scanner.nextInt();
+//
+//        try {
+//            char resultado = palabra.charAt(posicion);
+//            System.out.println("La posicion de la palabra es: " + resultado);
+//        } catch (StringIndexOutOfBoundsException e){
+//            System.out.println("Error: La posición indicada no existe en la palabra.");
+//        }
+//        scanner.close();
+//    }
+//}
+//        Ejercicio 7 – Mensaje de fin con finally
+//        Haz un programa que intente dividir dos números. Usa try-catch-finally para mostrar siempre un mensaje
+//        final que diga "Operación terminada".
 
-        //Pedir una posicion dentro de la palabra
-        System.out.println("Dime una posicion dentro de la palabra: ");
-        int posicion = scanner.nextInt();
+    Scanner scanner =  new Scanner(System.in);
 
-        try {
-            char resultado = palabra.charAt(posicion);
-            System.out.println("La posicion de la palabra es: " + resultado);
-        } catch (StringIndexOutOfBoundsException e){
-            System.out.println("Error: La posición indicada no existe en la palabra.");
+        System.out.println("Dime un numero: ");
+        int num1 = scanner.nextInt();
+
+        System.out.println("Dime otro numero: ");
+        int num2 = scanner.nextInt();
+
+        try{
+            float resultado = (float) num1/num2;
+            System.out.println("El resultado es: " + resultado);
+        } catch (ArithmeticException e){
+            System.out.println("No puedes dividir por cero");
+        } finally {   //finally es una parte opcional del bloque try-catch que se ejecuta siempre, tanto si ocurre
+                     // una excepción como si no.
+            System.out.println("Operacion terminada");
         }
         scanner.close();
     }
 }
+
 
 
 
