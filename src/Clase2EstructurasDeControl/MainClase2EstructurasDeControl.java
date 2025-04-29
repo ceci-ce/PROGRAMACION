@@ -3,8 +3,8 @@ import java.sql.SQLOutput;
 import java.util.Scanner;
 
 
-public class MainClase2EstructurasDeControl {
-    public static void main(String[] args) {
+//public class MainClase2EstructurasDeControl {
+//    public static void main(String[] args) {
 
 //    Ejercicio 1 – Salir de un bucle while con break
 //    Haz un programa que pida al usuario números enteros positivos. El programa debe terminar cuando el usuario
@@ -134,27 +134,39 @@ public class MainClase2EstructurasDeControl {
 //        Haz un programa que intente dividir dos números. Usa try-catch-finally para mostrar siempre un mensaje
 //        final que diga "Operación terminada".
 
-    Scanner scanner =  new Scanner(System.in);
+//    Scanner scanner =  new Scanner(System.in);
+//
+//        System.out.println("Dime un numero: ");
+//        int num1 = scanner.nextInt();
+//
+//        System.out.println("Dime otro numero: ");
+//        int num2 = scanner.nextInt();
+//
+//        try{
+//            float resultado = (float) num1/num2;
+//            System.out.println("El resultado es: " + resultado);
+//        } catch (ArithmeticException e){
+//            System.out.println("No puedes dividir por cero");
+//        } finally {   //finally es una parte opcional del bloque try-catch que se ejecuta siempre, tanto si ocurre
+//                     // una excepción como si no.
+//            System.out.println("Operacion terminada");
+//        }
+//        scanner.close();
+//    }
+//}
+//        Ejercicio 8 – Leer números y sumar los positivos, ignorando los negativos con continue
+//        Pide al usuario 5 números enteros. Suma solo los positivos usando continue para ignorar los negativos.
 
-        System.out.println("Dime un numero: ");
-        int num1 = scanner.nextInt();
-
-        System.out.println("Dime otro numero: ");
-        int num2 = scanner.nextInt();
-
-        try{
-            float resultado = (float) num1/num2;
-            System.out.println("El resultado es: " + resultado);
-        } catch (ArithmeticException e){
-            System.out.println("No puedes dividir por cero");
-        } finally {   //finally es una parte opcional del bloque try-catch que se ejecuta siempre, tanto si ocurre
-                     // una excepción como si no.
-            System.out.println("Operacion terminada");
-        }
-        scanner.close();
-    }
-}
-
+//    Scanner scanner = new Scanner(System.in);
+//
+//      for (int i = 0; i <= 5; i++){
+//          int numero = scanner.nextInt();
+//          System.out.println("Dame otro número");
+//            if (numero < 0){
+//                continue;
+//            }
+//          }
+//      }
 
 
 

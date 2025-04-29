@@ -4,10 +4,10 @@ import java.util.Scanner;//Importamos Scanner para leer datos del usuario
 //Ejercicio 1: Clasificación de edad
 //Pide al usuario su edad e imprime si es menor de edad, adulto o adulto mayor.
 //Este ejercicio lo he hecho sin mirar la solucion, con el resto si me he ayudado de las soluciones
-public class MainEjercicioEstructurasDeControl {
-    public static void main(String[] args) {
-
-        Scanner scanner = new Scanner(System.in);// Creamos un objeto Scanner
+//public class MainEjercicioEstructurasDeControl {
+//    public static void main(String[] args) {
+//
+//        Scanner scanner = new Scanner(System.in);// Creamos un objeto Scanner
 //
 //        System.out.println("Introduce tu edad: ");
 //        int numero = scanner.nextInt();// Leemos el numero ingresado
@@ -163,18 +163,18 @@ public class MainEjercicioEstructurasDeControl {
 //Ejercicio 7: Serie Fibonacci
 //Pide un número n y muestra los primeros n términos de la serie de Fibonacci.
 
-        System.out.println("Número de términos: ");
-        int n = scanner.nextInt();
-
-        int a = 0, b = 1, c;
-
-        for (int i = 0; i < n; i++) {
-        System.out.println(a + " ");
-        c = a + b;
-        a = b;
-        b = c;
-    }
-    scanner.close();
-}
-}
+//        System.out.println("Número de términos: ");
+//        int n = scanner.nextInt();
+//
+//        int a = 0, b = 1, c;
+//
+//        for (int i = 0; i < n; i++) {
+//        System.out.println(a + " ");
+//        c = a + b;
+//        a = b;
+//        b = c;
+//    }
+//    scanner.close();
+//}
+//}
 
