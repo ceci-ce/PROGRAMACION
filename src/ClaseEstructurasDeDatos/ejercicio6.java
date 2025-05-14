@@ -41,10 +41,4 @@ Restamos i para ir desde el final al principio.
 
 Se muestran los numeros del array invertido con un for-each: "Para cada elemento num dentro del array invertido,
  haz lo siguiente..."
-
-
-
-
-
-
  */
