@@ -17,21 +17,34 @@ public class ejercicio9 {
 
         // Pedir la cantidad de numeros
 
-        System.out.println("Cuantos numeros tiene el primer array? ");
-        int cantidad1 = sc.nextInt();
-        System.out.println("Cuantos numeros tiene el segundo array? ");
-        int cantidad2 = sc.nextInt();
-
+        System.out.println("Cuantos numeros tiene el array? ");
+        int cantidad = sc.nextInt();
 
         // Crear el array con ese tamaño
 
-        int [] enteros1 = new int[cantidad1];
-        int [] enteros2 = new int[cantidad1];
+        int [] enteros1 = new int[cantidad];
+        int [] enteros2 = new int[cantidad];
 
-    for (int i = 0; i < cantidad1; i++){
-        System.out.println("Introduce el numero  " + (i + 1) + " ");
+        // Leer el primer array
+        for (int i = 0; i < cantidad; i++){
+        System.out.println("Introduce el numero  " + (i + 1) + " del primer array: ");
         enteros1[i] = sc.nextInt();
         }
 
-}
+        // Leer el segundo array
+        for (int i = 0; i < cantidad; i++){
+            System.out.println("Introduce el numero " + (i + 1) + " del segundo array: ");
+            enteros2[i] = sc.nextInt();
+        }
+
+        //Comparar posiciones
+        int coincidencias = 0;
+        for (int i = 0; i < cantidad; i++){
+            if(enteros1[i] == enteros2[i]){
+                coincidencias++;
+            }
+        }
+        System.out.println("Coinciden en " + coincidencias + " posiciones.");
+        sc.close();
+    }
 }
