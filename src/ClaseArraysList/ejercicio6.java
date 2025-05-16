@@ -11,7 +11,7 @@ public class ejercicio6 {
         Scanner sc = new Scanner(System.in);
         ArrayList<String> nombres = new ArrayList<>();
 
-        System.out.println("Introduce 5 nombres: ");
+        System.out.println("Introduce hasta 5 nombres (o escribe 'salir' para terminar): ");
         String nombre;
 
         do{
@@ -20,9 +20,12 @@ public class ejercicio6 {
             if (!nombre.equalsIgnoreCase("salir")){
                 nombres.add(nombre);
             }
-        }while (!nombre.equalsIgnoreCase("salir"));
+        }while (nombres.size() < 5 && !nombre.equalsIgnoreCase("salir"));
 
-        System.out.println("La lista de nombres es: " + nombres);
+        System.out.println("\nLa lista de nombres es: ");
+        for (String n: nombres){
+            System.out.println(n);
+        }
         sc.close();
     }
 }
