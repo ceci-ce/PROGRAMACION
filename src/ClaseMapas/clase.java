@@ -1,8 +1,8 @@
 package ClaseMapas;
 
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Scanner;
+import java.util.TreeMap;
+import java.util.Map;
 
 
 import java.util.HashMap;
@@ -22,7 +22,7 @@ public class clase {
         notas.put("Luis", 9.0);
 
         for(Map.Entry<String, Double> entrada: notas.entrySet()){
-            System.out.println(entrada.getKey() + "->" + entrada.getValue());
+            System.out.println(entrada.getKey() + " -> " + entrada.getValue());
         }
         System.out.println("Introduce un nombre: ");
         String nombre = scanner.nextLine();
@@ -31,6 +31,16 @@ public class clase {
             System.out.println(nombre + "tiene una nota de " + notas.get(nombre));
         }else{
             System.out.println("Estudiante no encontrado");
+        }
+
+        System.out.println();
+        System.out.println();
+        System.out.println();
+
+        TreeMap<String, Double> ordenado = new TreeMap<>(notas); //Crear un TreeMap a partir del HashMap de antes
+
+        for(Map.Entry<String, Double> entrada: ordenado.entrySet()){ //Se usa el TreeMap para ordenarlo alfabeticamente
+            System.out.println(entrada.getKey() + " -> " + entrada.getValue());
         }
     }
 }
