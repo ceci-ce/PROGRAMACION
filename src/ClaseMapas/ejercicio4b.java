@@ -36,6 +36,6 @@ public class ejercicio4b {
             System.out.println(entry.getKey() + " : " + entry.getValue());
         }
         scanner.nextLine(); // Limpiar el buffer
-
-    }
+        scanner.close();
+        }
     }
