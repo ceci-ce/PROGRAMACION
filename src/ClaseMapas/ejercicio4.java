@@ -6,5 +6,30 @@ package ClaseMapas;
 public class ejercicio4 {
     public static void main(String[] args) {
 
+        HashMap<String, Integer> productos = new HashMap<>();
+
+        productos.put("Fresas", 14);
+        productos.put("Tomates", 8);
+        productos.put("Cebollas", 3);
+        productos.put("Atun", 2);
+        productos.put("Guacamole", 2);
+        productos.put("Nachos", 1);
+
+
+        System.out.println("Mapa original de productos y sus cantidades: ");
+        for(Map.Entry<String, Integer> entry: productos.entrySet()){
+            System.out.println(entry.getKey() + " : " + entry.getValue());
+        }
+        System.out.println("\n---------------------------");
+
+
+        // Actualizamos la cantidad de nachos
+
+        productos.put("Nachos", 4);
+
+        System.out.println("Mapa despues de modificar la cantidades de nachos: ");
+        for(Map.Entry<String, Integer> entry: productos.entrySet()){
+            System.out.println(entry.getKey()+ " : " + entry.getValue());
+        }
     }
 }
