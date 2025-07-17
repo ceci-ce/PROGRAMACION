@@ -1,4 +1,8 @@
 package ClaseMapas;
+
+import java.util.HashMap;
+import java.util.Map;
+
 //4. Actualizar el Valor de una Clave en un Mapa:
 //Crea un HashMap<String, Integer> que almacene productos y sus cantidades.
 //Actualiza la cantidad de un producto y luego muestra el mapa actualizado.
