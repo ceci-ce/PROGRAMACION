@@ -3,6 +3,10 @@ package ClaseFunciones;
 public class claseb {
   public static void main(String[] args){
 
+    int[] numeros = {1,3,6,7,8};
+
+    System.out.println("La media es: " + calcularMedia(numeros));
+
     String email = "pepe@gmail.com";
 
         String nombreUsuario = email.substring(0, email.indexOf("@"));
