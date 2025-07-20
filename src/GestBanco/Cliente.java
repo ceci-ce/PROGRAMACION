@@ -8,7 +8,7 @@ public class Cliente {
     private double saldo;
 
     // Atajo: clic derecho --> generate --> constructor //los constructores tienen que ser siempre publicos
-    public Cliente(double saldo, String dni, String nombre) {
+    public Cliente(String dni, String nombre, double saldo) {
         this.saldo = saldo;
         this.dni = dni;
         this.nombre = nombre;
@@ -32,6 +32,7 @@ public class Cliente {
         this.saldo += cantidad;
     }
 
+    //REVISAR CODIGO
     // se crea la funcion de retirar. Si no hay saldo suficiente no se se puede retirar, por eso se usa el boolean
     public boolean retirar (double cantidad){
         if(saldo >= cantidad){
@@ -40,6 +41,10 @@ public class Cliente {
         }
             return false;
         }
+        public void mostrarInfo(){
+            System.out.println("\n DNI: " + this.dni + "\n nombre: " + this.nombre + "\n Saldo:");
+        }
+
     }
 
 
