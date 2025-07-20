@@ -5,4 +5,12 @@ package ClaseFunciones;
 //llevas tus [edad] años".
 
 public class ejercicio3 {
+    public static void main(String[] args) {
+
+    saludar("Ceci", 27);
+    }
+
+    public static void saludar(String nombre, int edad){
+        System.out.println("Hola, " + nombre + ", qué bien llevas tus " + edad + " años.");
+    }
 }

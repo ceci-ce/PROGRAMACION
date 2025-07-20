@@ -5,4 +5,20 @@ package ClaseFunciones;
 //Prueba la función en el main.
 
 public class ejercicio2 {
+    public static void main(String[] args) {
+
+        if(esPar(3)){
+            System.out.println("Es par");
+        }else{
+            System.out.println("No es par");
+        }
+    }
+
+    public static boolean esPar(int n1){
+        if(n1 % 2 == 0){
+            return true;
+        }else{
+            return false;
+        }
+    }
 }
