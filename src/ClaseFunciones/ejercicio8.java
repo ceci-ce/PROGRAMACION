@@ -19,6 +19,8 @@ public class ejercicio8 {
         int mayor = obtenerMayor(num1,num2);
         System.out.println("El numero mayor es: " + mayor);
 
+        scanner.close();
+
     }
 
     public static int obtenerMayor(int n1, int n2){

@@ -19,6 +19,9 @@ public class ejercicio9 {
 
         int numUsuario = sc.nextInt();
         tablaMultiplicar(numUsuario);
+
+        sc.close();
+
     }
 
     public static void tablaMultiplicar(int n){

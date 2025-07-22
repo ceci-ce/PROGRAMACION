@@ -32,7 +32,7 @@ public class ejercicio6b {
 
         double [] notasAlumnos = leerNotas();
 
-       double mediaNotas = calcularPromedio(notasAlumnos);
+        double mediaNotas = calcularPromedio(notasAlumnos);
 
         System.out.println("La media de las notas de los alumnos es: " + mediaNotas);
     }
@@ -59,7 +59,10 @@ public class ejercicio6b {
         System.out.println("Nota 5: ");
         notasAlumnos[4] = sc.nextDouble();
 
+        sc.close();
+
         return notasAlumnos;
+
     }
 
     //Funcion para calcular la media
@@ -73,4 +76,5 @@ public class ejercicio6b {
         }
         return totalNotas/notas.length;
     }
+
 }

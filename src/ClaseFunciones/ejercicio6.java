@@ -39,6 +39,8 @@ public class ejercicio6 {
         System.out.print("Introduce altura: ");
         datos[1] = sc.nextDouble();
 
+        sc.close();
+
         return datos;
     }
     // Funcion calcular area

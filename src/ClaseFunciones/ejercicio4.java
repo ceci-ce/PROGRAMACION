@@ -35,6 +35,8 @@ public class ejercicio4 {
         System.out.println("Introduce tu edad: ");
         datos[1] = sc.nextLine();
 
+        sc.close();
+
         return datos;
     }
 
