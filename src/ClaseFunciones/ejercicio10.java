@@ -14,5 +14,14 @@ package ClaseFunciones;
 public class ejercicio10 {
     public static void main(String[] args) {
 
+        double resultado = celsiusAFahrenheit(25);
+        System.out.println(resultado);
+    }
+
+    public static double celsiusAFahrenheit(double celsius){
+
+        return (celsius * 9/5) + 32;
     }
 }
+
+
