@@ -1,6 +1,7 @@
 package ClaseFunciones;
 
 import java.util.Scanner;
+import java.util.Locale;
 
 //6. Código para convertir en funciones
 //Este código calcula el área de un rectángulo.
@@ -17,6 +18,8 @@ import java.util.Scanner;
 
 public class ejercicio6 {
     public static void main(String[] args) {
+
+        Locale.setDefault(Locale.US);
 
         double [] datos = datosRectangulo();
         double area = calcularArea(datos[0], datos[1]);
