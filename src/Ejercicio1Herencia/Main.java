@@ -1,3 +1,5 @@
+package Ejercicio1Herencia;
+
 import Ejercicio1Herencia.Bicicleta;
 import Ejercicio1Herencia.Coche;
 import Ejercicio1Herencia.Vehiculo;
