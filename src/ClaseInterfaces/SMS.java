@@ -8,6 +8,7 @@ public class SMS implements Enviable{
         this.numero = numero;
     }
 
+    @Override
     public void enviar(String mensaje){
         System.out.println("Enviando SMS al " + this.numero + ": " + mensaje);
     }
